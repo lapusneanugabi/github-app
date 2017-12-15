@@ -1,0 +1,18 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{ $ctrl.data.login }}</span>
+            <span class="md-subhead">
+                <a href="{{ $ctrl.data.url }}">{{ $ctrl.data.url }}</a>
+            </span>
+        </md-card-title-text>
+        <md-card-title-media>
+            <div class="md-media-lg card-media">
+                <img ng-cloak ng-src="{{$ctrl.data.avatar_url}}" class="md-avatar" alt="{{$ctrl.data.login}}" />
+            </div>
+        </md-card-title-media>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center">
+        <md-button>Details</md-button>
+    </md-card-actions>
+</md-card>

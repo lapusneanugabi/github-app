@@ -1,7 +1,7 @@
 {
-  "name": "angular-webpack-workflow",
+  "name": "github-app",
   "version": "1.1.0",
-  "description": "A workflow for Angular made with Webpack",
+  "description": "github-app",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
@@ -9,18 +9,18 @@
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/preboot/angularjs-webpack.git"
-  },
-  "author": "Jesus Rodriguez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/preboot/angularjs-webpack/issues"
-  },
-  "homepage": "https://github.com/preboot/angularjs-webpack",
+  "author": "LGC",
+  "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.0"
+    "angular": "^1.5.0",
+    "angular-animate": "^1.6.7",
+    "angular-aria": "^1.6.7",
+    "angular-material": "^1.1.5",
+    "angular-resource": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "angular-sanitize": "^1.6.7",
+    "material-design-icons": "^3.0.1",
+    "ngcomponentrouter": "^2.1.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
