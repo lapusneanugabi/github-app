@@ -3,6 +3,7 @@ let AppComponent = {
     template: require('./app.component.html'),
     $routeConfig: [
         { path: '/', component: 'users', name: 'Users', useAsDefault: true },
+        { path: '/Search/:textSearched', component: 'search', name: 'Search' },
         { path: '/**', component: 'notfound', name: 'NotFound' }
     ],
     controller: function () {
@@ -21,13 +22,10 @@ let AppComponent = {
         ctrl.showSearchBar = function () {
             return ctrl.search != null
         };
+
         ctrl.endSearch = function () {
             return ctrl.search = null;
         };
-        
-        ctrl.submit = function () {
-            console.error('Search function not yet implemented');
-        }
     }
 };
 

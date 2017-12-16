@@ -4,7 +4,9 @@
       <!-- Pre-Search Bar -->
       <div id="search-bar" ng-show="$ctrl.showPreSearchBar()" class="md-toolbar-tools">
         <img src="/img/logo.png" class="logo">
-        <h2>Github-App</h2>
+        <h2>
+         <a ng-href="/"> Github-App</a>
+        </h2>
         <span flex></span>
 
         <!-- Search button (initiates search) -->
@@ -16,15 +18,15 @@
 
       <!-- Search bar -->
       <div ng-show="$ctrl.showSearchBar()" class="md-toolbar-tools search-bar">
-
-        <md-button class="md-icon-button" ng-click="$ctrl.submit()">
-          <md-icon>search</md-icon>
-        </md-button>
+        <a ng-href="/Search/{{$ctrl.search}}">
+          <md-button class="md-icon-button">
+            <md-icon>search</md-icon>
+          </md-button>
+        </a>
 
         <!-- Input Text -->
         <md-input-container flex>
-          <!-- <label for="search">Search</label> -->
-          <input id="search-input" type="text" ng-model="search" />
+          <input id="search-input" type="text" ng-model="$ctrl.search" />
         </md-input-container>
 
         <md-button class="md-icon-button" ng-click="$ctrl.endSearch()">

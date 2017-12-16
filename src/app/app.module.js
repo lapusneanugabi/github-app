@@ -1,3 +1,7 @@
+import 'angular-material/angular-material.css'
+import 'material-design-icons';
+import '../style/app.css';
+
 import angular from 'angular';
 import ngSanitize from 'angular-sanitize';
 import ngResource from 'angular-resource';
@@ -7,16 +11,13 @@ import 'angular-aria';
 import 'angular-animate';
 import ngMaterial from 'angular-material';
 
-import 'angular-material/angular-material.css'
-import 'material-design-icons';
-import '../style/app.css';
-
 import UserService from './services/user.service';
 
 import AppComponent from './app.component';
 import UserComponent from './components/user/user.component';
 import UsersComponent from './pages/users/users.component';
 
+import SearchComponent from './pages/search/search.component';
 import NotFoundComponent from './pages/notfound/notfound.component';
 
 const MODULE_NAME = 'app';
@@ -40,7 +41,8 @@ angular
   .component('app', AppComponent)
   .component('notfound', NotFoundComponent)
   .component('user', UserComponent)
-  .component('users', UsersComponent);
+  .component('users', UsersComponent)
+  .component('search', SearchComponent);
 
 
 

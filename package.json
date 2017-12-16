@@ -17,7 +17,6 @@
     "angular-aria": "^1.6.7",
     "angular-material": "^1.1.5",
     "angular-resource": "^1.6.7",
-    "angular-route": "^1.6.7",
     "angular-sanitize": "^1.6.7",
     "material-design-icons": "^3.0.1",
     "ngcomponentrouter": "^2.1.0"

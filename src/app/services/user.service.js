@@ -1,15 +1,8 @@
 const UserService = ($resource) => {
 
     return $resource(
-        'https://api.github.com/users',
-        {
-        },
-        {
-            getUsers: {
-                method: "JSONP",
-                isArray: false
-            }
-        }
+        'https://api.github.com/users/:login'
+        
     );
 };
 

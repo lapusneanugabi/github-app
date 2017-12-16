@@ -1,8 +1,8 @@
 const UsersController = function (userService) {
     this.users = [];
 
-    userService.getUsers({}).$promise.then((response) => {
-        this.users = response.data;
+    userService.query((users) => {
+        this.users = users;
     });
 };
 
