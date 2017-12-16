@@ -1,0 +1,39 @@
+<md-content layout-align="center" class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="60" layout="column">
+        <user ng-if="$ctrl.user.name !== undefined" data="$ctrl.user"></user>
+        <div layout="row">
+            <!-- FOLLOWERS -->
+            <div flex>
+                <md-card>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline center">{{ $ctrl.user.followers }}</span>
+                            <span class="md-subhead center">FOLLOWERS</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-card>
+            </div>
+
+            <!-- REPOSITORIES -->
+            <div flex>
+                <md-card>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline center">{{ $ctrl.user.public_repos }}</span>
+                            <span class="md-subhead center">REPOSITORIES</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-card>
+            </div>
+        </div>
+        <div ng-if="$ctrl.user.name === undefined && $ctrl.isLoaded">
+            <div layout="row" layout-align="center">
+                <div>
+                    USER
+                    <u>{{$ctrl.login}}</u> NOT FOUND
+                </div>
+            </div>
+        </div>
+    </div>
+
+</md-content>

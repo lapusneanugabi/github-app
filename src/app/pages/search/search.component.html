@@ -1,5 +1,12 @@
 <md-content layout-align="center" class="md-padding" layout-xs="column" layout="row">
     <div flex-xs flex-gt-xs="60" layout="column">
-        <user data="$ctrl.user"></user>
+        <user ng-if="$ctrl.user.name !== undefined" data="$ctrl.user"></user>
+        <div ng-if="$ctrl.user.name === undefined && $ctrl.isLoaded">
+            <div layout="row" layout-align="center">
+                <div>
+                    USER <u>{{$ctrl.textSearched}}</u> NOT FOUND
+                </div>
+            </div>
+        </div>
     </div>
 </md-content>

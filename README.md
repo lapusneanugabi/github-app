@@ -22,6 +22,9 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 ### Users page ([http://localhost:8080/](http://localhost:8080/)): 
 ![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/users.png "Users page")
 
+### User details page ([http://localhost:8080/Users/mojombo](http://localhost:8080/Users/mojombo)): 
+![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/userdetails.png "User details page")
+
 ### Search page ([http://localhost:8080/Search/mojombo](http://localhost:8080/Search/mojombo)):
 ![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/search.png "Search page")
 

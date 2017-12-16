@@ -3,6 +3,7 @@ let AppComponent = {
     template: require('./app.component.html'),
     $routeConfig: [
         { path: '/', component: 'users', name: 'Users', useAsDefault: true },
+        { path: '/Users/:login', component: 'userdetails', name: 'UserDetails' },
         { path: '/Search/:textSearched', component: 'search', name: 'Search' },
         { path: '/**', component: 'notfound', name: 'NotFound' }
     ],

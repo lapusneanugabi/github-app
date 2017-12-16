@@ -1,11 +1,17 @@
 const SearchController = function (userService) {
-    this.user = [];
+    this.user = {};
+    this.textSearched = "";
+    this.isLoaded = false;
 
     this.$routerOnActivate = function (next, previous) {
-        let textSearched = next.params.textSearched;
-        return userService.get({ login: textSearched }, (user) => {
+        this.textSearched = next.params.textSearched;
+        return userService.get({ login: this.textSearched }, (user) => {
             this.user = user;
-        });
+            this.isLoaded = true;
+        }, (error) => {
+            // error handler
+            this.isLoaded = true;
+        })
     }
 };
 

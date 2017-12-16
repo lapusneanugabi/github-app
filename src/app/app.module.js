@@ -14,8 +14,11 @@ import ngMaterial from 'angular-material';
 import UserService from './services/user.service';
 
 import AppComponent from './app.component';
+
 import UserComponent from './components/user/user.component';
 import UsersComponent from './pages/users/users.component';
+
+import UserDetailsComponent from './pages/user-details/user-details.component';
 
 import SearchComponent from './pages/search/search.component';
 import NotFoundComponent from './pages/notfound/notfound.component';
@@ -42,7 +45,8 @@ angular
   .component('notfound', NotFoundComponent)
   .component('user', UserComponent)
   .component('users', UsersComponent)
-  .component('search', SearchComponent);
+  .component('search', SearchComponent)
+  .component('userdetails', UserDetailsComponent);
 
 
 

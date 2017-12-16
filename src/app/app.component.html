@@ -3,9 +3,11 @@
     <md-toolbar>
       <!-- Pre-Search Bar -->
       <div id="search-bar" ng-show="$ctrl.showPreSearchBar()" class="md-toolbar-tools">
-        <img src="/img/logo.png" class="logo">
+        <div>
+          <img ng-cloak src="/img/logo.png" class="logo" alt="Logo" />
+        </div>
         <h2>
-         <a ng-href="/"> Github-App</a>
+          <a ng-href="/"> Github-App</a>
         </h2>
         <span flex></span>
 
