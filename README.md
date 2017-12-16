@@ -20,4 +20,4 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 
 Users page: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/pulic/img/users.png "Users page")
+![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/users.png "Users page")
