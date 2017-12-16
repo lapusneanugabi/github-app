@@ -19,9 +19,13 @@ $ npm start
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 
-### Users page: 
+### Users page ([http://localhost:8080/](http://localhost:8080/)): 
 ![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/users.png "Users page")
 
-### Search page:
+### Search page ([http://localhost:8080/Search/mojombo](http://localhost:8080/Search/mojombo)):
 ![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/search.png "Search page")
+
+
+### Not Found page ([http://localhost:8080/page%20not%20found](http://localhost:8080/page%20not%20found)):
+![alt text](https://github.com/lapusneanugabi/github-app/blob/master/src/public/img/notfound.png "Not Found page")
 

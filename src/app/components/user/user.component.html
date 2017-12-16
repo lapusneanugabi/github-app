@@ -12,7 +12,7 @@
             </div>
         </md-card-title-media>
     </md-card-title>
-    <md-card-actions ng-if="!$ctrl.data.name" layout="row" layout-align="end center">
+    <md-card-actions ng-if="$ctrl.data.name === undefined" layout="row" layout-align="end center">
         <md-button>Details</md-button>
     </md-card-actions>
 </md-card>
